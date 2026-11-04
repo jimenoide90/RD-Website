@@ -1,0 +1,10 @@
+:root{
+--font-display:'Bebas Neue',sans-serif;--font-body:'DM Sans',sans-serif;--font-mono:'DM Mono',monospace;
+--fs-hero:clamp(72px,13vw,200px);--fs-h1:clamp(48px,7vw,96px);--fs-h2:clamp(40px,5vw,64px);--fs-card-title:clamp(1.4rem,2.2vw,2rem);
+--fs-body:16px;--fs-small:14px;--fs-meta:12px;--fs-label:11px;
+--lh-display:.95;--lh-body:1.65;--ls-label:.14em;--ls-display:.03em;
+--fw-light:300;--fw-regular:400;--fw-medium:500;
+}
+.rd-h1{font:400 var(--fs-h1)/var(--lh-display) var(--font-display);margin:0}
+.rd-label{font:400 var(--fs-label)/1 var(--font-mono);letter-spacing:var(--ls-label);text-transform:uppercase}
+.rd-body{font:var(--fw-light) var(--fs-body)/var(--lh-body) var(--font-body)}

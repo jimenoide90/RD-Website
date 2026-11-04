@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="ext-resource-dependency" content="./img_s/a1.png" data-resource-id="img_s_a1_png" />
+<meta name="ext-resource-dependency" content="./img_s/a5.png" data-resource-id="img_s_a5_png" />
+<meta name="ext-resource-dependency" content="./img_s/a3.png" data-resource-id="img_s_a3_png" />
+<meta name="ext-resource-dependency" content="./img_s/a9.png" data-resource-id="img_s_a9_png" />
+<meta name="ext-resource-dependency" content="./img_s/w_lodge.png" data-resource-id="img_s_w_lodge_png" />
+<meta name="ext-resource-dependency" content="./img_s/w_crown.png" data-resource-id="img_s_w_crown_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_track.png" data-resource-id="img_s_c_track_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_wheel.png" data-resource-id="img_s_c_wheel_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_person.png" data-resource-id="img_s_c_person_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_wagon.png" data-resource-id="img_s_c_wagon_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_garage.png" data-resource-id="img_s_c_garage_png" />
+<meta name="ext-resource-dependency" content="./img_s/c_interior.png" data-resource-id="img_s_c_interior_png" />
+<meta name="ext-resource-dependency" content="./img_s/a4.png" data-resource-id="img_s_a4_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_strategy.png" data-resource-id="img_s_s_strategy_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_branding.png" data-resource-id="img_s_s_branding_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_3d.png" data-resource-id="img_s_s_3d_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_web.png" data-resource-id="img_s_s_web_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_crm.png" data-resource-id="img_s_s_crm_png" />
+<meta name="ext-resource-dependency" content="./img_s/s_data.png" data-resource-id="img_s_s_data_png" />
+<meta name="ext-resource-dependency" content="./img_s/p_familiar.png" data-resource-id="img_s_p_familiar_png" />
+<meta name="ext-resource-dependency" content="./img_s/p_difference.png" data-resource-id="img_s_p_difference_png" />
+<template id="__bundler_thumbnail" data-bg-color="#0b0b0b"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#0b0b0b"/><text x="600" y="430" text-anchor="middle" font-family="Impact,sans-serif" font-size="150" fill="#f5f2ed">RD</text><rect x="520" y="470" width="160" height="10" fill="#ed3d02"/></svg></template>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500&amp;family=DM+Mono&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b0b0b;color:#f5f2ed;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#f5f2ed;text-decoration:none}a:hover{color:#ed3d02}
+@keyframes rdUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes rdBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes marqueeProjects{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rdFade{from{opacity:0}to{opacity:1}}
+@keyframes rdFloat{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-6deg) translateY(-10px)}}
+@keyframes rdScroll{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:860px){.rd-hide-m{display:none!important}.rd-stack{grid-template-columns:1fr!important}.rd-pad{padding-left:24px!important;padding-right:24px!important}.rd-cards{grid-template-columns:1fr 1fr!important}}
+@media (max-width:520px){.rd-cards{grid-template-columns:1fr!important}}
+@media (max-width:860px){.ab-wrap{height:auto!important}.ab-stick{position:relative!important;height:auto!important;overflow:visible!important}.ab-panels{flex-direction:column!important;height:auto!important}.ab-panel{min-height:92vh!important;flex:none!important}.ab-title{position:relative!important;transform:none!important;opacity:1!important;padding:104px 24px 56px!important;background:none!important}.ab-hl{transform:none!important}.ab-list{opacity:1!important;transform:none!important}.ab-bg{opacity:1!important;filter:none!important}}
+@keyframes fadeA{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@keyframes fadeB{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.wr-pick{display:flex;align-items:flex-end;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.wr-pick::-webkit-scrollbar{display:none}
+.wr-av{width:40px;height:40px}
+.wr-top{display:flex;flex-direction:column;gap:32px;padding:40px 24px 0}
+.wr-bot{padding:0 24px 24px}
+.wr-h1{font-size:30px;max-width:36rem}
+.wr-role,.wr-ten{display:none}
+.wr-bio{font-size:14px;max-width:20rem}
+@media (min-width:640px){.wr-av{width:56px;height:56px}.wr-pick{gap:12px;overflow:visible;padding-bottom:0}.wr-top{padding:56px 40px 0}.wr-bot{padding:0 40px 32px}.wr-h1{font-size:48px}.wr-role{display:block}.wr-bio{font-size:16px}}
+@media (min-width:768px){.wr-top{flex-direction:row;align-items:flex-start;justify-content:space-between;gap:64px}.wr-bio{padding-top:8px}.wr-ten{display:block}}
+@media (min-width:1024px){.wr-top{padding-left:64px;padding-right:64px}.wr-bot{padding-left:64px;padding-right:64px}.wr-h1{font-size:72px}}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#0b0b0b;overflow-x:clip">
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:50;height:{{ navH }}px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(24px,5.5vw,80px);background:{{ navBg }};backdrop-filter:{{ navBlur }};border-bottom:1px solid {{ navLine }};transition:height .4s cubic-bezier(.22,1,.36,1),background .4s,border-color .4s,backdrop-filter .4s">
+  <nav class="rd-hide-m" style="display:flex;gap:clamp(14px,2.2vw,32px);flex:1;min-width:0">
+    <a href="#what-we-do" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:#f5f2ed;padding:6px 0">WHAT WE DO</a>
+    <a href="#work" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:#f5f2ed;padding:6px 0">Work</a>
+    <a href="#about" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:#f5f2ed;padding:6px 0">HOW WE DO IT</a>
+    <a href="#team" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:#f5f2ed;padding:6px 0">WHO WE ARE</a>
+  </nav>
+  <a href="#top" style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.06em;color:#f5f2ed;flex:0 0 auto;white-space:nowrap;text-align:center;margin:0 16px">RICHMOND DAY</a>
+  <div style="flex:1;display:flex;justify-content:flex-end">
+    <a href="#contact" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;background:#ED3D02;color:#fff;padding:11px 24px;border-radius:2px;transition:transform .25s cubic-bezier(.22,1,.36,1),opacity .25s" style-hover="transform:translateY(-2px);opacity:.88">START A PROJECT</a>
+  </div>
+</header>
+
+<section id="top" style="position:relative;height:100vh;min-height:560px;background:#000;overflow:hidden">
+  <div id="stage" style="position:absolute;inset:0;z-index:10;overflow:hidden;perspective:1150px;perspective-origin:50% 50%;touch-action:pan-y;cursor:grab;animation:rdFade 1.4s ease both">
+    <div id="world" style="position:absolute;top:50%;left:50%;width:0;height:0;transform-style:preserve-3d;will-change:transform">
+      <div id="orb" style="position:absolute;top:0;left:0;width:0;height:0;transform-style:preserve-3d">
+        <sc-for list="{{ sphereCards }}" as="c" hint-placeholder-count="12">
+          <div data-card="{{ c.i }}" data-tall="{{ c.tall }}" style="position:absolute;top:0;left:0;cursor:pointer">
+            <figure style="margin:0;position:relative;width:100%;height:100%;border-radius:3px;overflow:hidden;background:#0a0a0a;transition:transform .5s ease" style-hover="transform:scale(1.045)">
+              <div role="img" aria-label="{{ c.title }}" style="width:100%;height:100%;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none;background:url({{ c.img }}) center/cover no-repeat"></div>
+              <div data-shade="1" style="position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)"></div>
+            </figure>
+          </div>
+        </sc-for>
+      </div>
+      <h1 id="headline" style="position:absolute;top:0;left:0;width:min(80vw,900px);margin:0 0 0 calc(min(80vw,900px) / -2);text-align:center;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(56px,10.5vw,160px);line-height:.9;letter-spacing:.01em;color:#fff;text-shadow:0 2px 34px rgba(0,0,0,.55);pointer-events:none;user-select:none"><span class="inner" style="position:absolute;top:0;left:0;width:100%;transform:translateY(-50%);animation:rdFade 1.4s .5s ease both">RICHMOND DAY</span></h1>
+    </div>
+  </div>
+  <div style="position:absolute;inset:0;z-index:12;pointer-events:none;background:radial-gradient(ellipse 88% 92% at 50% 50%,transparent 48%,rgba(0,0,0,.26) 80%,rgba(0,0,0,.72) 100%)"></div>
+  <div style="position:absolute;left:clamp(24px,5.5vw,80px);right:clamp(24px,5.5vw,80px);bottom:32px;z-index:14;display:flex;align-items:center;justify-content:space-between;gap:24px;animation:rdUp 1s .9s cubic-bezier(.22,1,.36,1) both">
+    <div style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#d9d5cc">Toronto, Canada</div>
+    <div class="rd-hide-m" style="display:flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,242,237,.55)"><span style="display:block;width:44px;height:1px;background:rgba(245,242,237,.28)"></span>Drag to explore · Click to open</div>
+    <a href="#work" style="display:inline-flex;align-items:center;gap:12px;font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.05em;border-bottom:1px solid rgba(245,242,237,.4);padding-bottom:6px;transition:gap .3s cubic-bezier(.22,1,.36,1),border-color .3s" style-hover="gap:20px;border-color:#ed3d02">OUR WORK <span>↓</span></a>
+  </div>
+  <div onClick="{{ closeLit }}" style="position:absolute;inset:0;z-index:40;display:grid;place-items:center;padding:clamp(72px,10vh,96px) clamp(16px,4vw,48px) 32px;background:rgba(0,0,0,.55);opacity:{{ litOp }};pointer-events:{{ litPE }};transition:opacity .45s cubic-bezier(.22,1,.36,1)">
+    <div onClick="{{ stop }}" style="width:min(86vw,860px,(100vh - 260px) * 1.5);max-height:100%;overflow:auto;transform:scale({{ litScale }});transition:transform .6s cubic-bezier(.22,1,.36,1)">
+      <div style="position:relative;aspect-ratio:3/2;border-radius:2px;background:#0b0b0b;box-shadow:0 30px 90px rgba(0,0,0,.75);overflow:hidden">
+        <button onClick="{{ closeLit }}" style="position:absolute;top:12px;right:14px;min-width:44px;min-height:44px;padding:10px 14px;font:inherit;font-size:12.5px;color:#f4f2ef;background:rgba(0,0,0,.35);border:1px solid rgba(244,242,239,.78);border-radius:6px;cursor:pointer" style-hover="border-color:#fff;background:rgba(0,0,0,.55)">Close</button><div role="img" aria-label="{{ lit.title }}" style="width:100%;height:100%;object-fit:{{ lit.fit }};display:block;background:#0b0b0b;background:url({{ lit.img }}) center/{{ lit.fit }} no-repeat"></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-top:16px">
+        <div><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3vw,44px);line-height:1">{{ lit.title }}</div><div style="font-size:13px;color:rgba(244,242,239,.62);margin-top:6px">{{ lit.place }}</div></div>
+        <a href="#work" onClick="{{ closeLit }}" style="display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ed3d02;white-space:nowrap">View case study <span>↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="what-we-do" style="overflow-x:hidden;background:#0f0f0f;color:#fff;font-family:'DM Sans',sans-serif">
+</section>
+
+<section id="services" class="rd-pad" style="scroll-margin-top:60px;padding:clamp(80px,10vw,144px) clamp(24px,5.5vw,80px);background:#0b0b0b">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal="1" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:56px;border-bottom:1px solid rgba(245,242,237,.12);padding-bottom:20px">
+      <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,7vw,96px);line-height:.95">WHAT WE DO</h2>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;color:#889bb1">01 / 06</span>
+    </div>
+    <div class="rd-stack" style="display:grid;grid-template-columns:minmax(200px,.7fr) 1.95fr 1fr;gap:clamp(24px,4vw,64px);align-items:start">
+      <ul data-reveal="1" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+          <li onClick="{{ s.select }}" onMouseEnter="{{ s.select }}" style="cursor:pointer;display:flex;align-items:center;gap:14px;padding:11px 0;font-family:'Bebas Neue',sans-serif;font-size:{{ s.size }}px;letter-spacing:.03em;color:{{ s.color }};transition:color .3s,font-size .4s cubic-bezier(.22,1,.36,1)">
+            <span style="display:block;height:1px;width:{{ s.bar }}px;background:#ed3d02;transition:width .4s cubic-bezier(.22,1,.36,1)"></span>{{ s.name }}
+          </li>
+        </sc-for>
+      </ul>
+      <div data-reveal="1" style="position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:#161616">
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+          <div role="img" aria-label="{{ s.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ s.op }};transform:scale({{ s.scale }});transition:opacity .6s cubic-bezier(.22,1,.36,1),transform 1.2s cubic-bezier(.22,1,.36,1);background:url({{ s.img }}) center/cover no-repeat"></div>
+        </sc-for>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.7))"></div>
+        <div style="position:absolute;left:28px;bottom:22px;font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4.5vw,64px);line-height:.95">{{ active.name }}</div>
+      </div>
+      <div data-reveal="1" style="padding-top:8px">
+        <p style="margin:0;font-weight:300;font-size:16px;line-height:1.65;color:#d9d5cc;max-width:38ch;text-wrap:pretty">{{ active.desc }}</p>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;margin-top:28px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ed3d02">Discuss this <span>↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="position: relative; color: #000; font-family: 'DM Sans',sans-serif; background-color: #000000">
+<div style="position: relative; padding: clamp(112px,10vw,160px) clamp(24px,5vw,64px) 40px; padding-top: 31px">
+
+</div>
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,64px) 64px"><div data-reveal="1" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:56px;border-bottom:1px solid rgba(245,242,237,.12);padding-bottom:20px"><h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,7vw,96px);line-height:.95;color:#f5f2ed">WORK</h2><span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;color:#889bb1">02 / 06</span></div><div class="rd-stack" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px"><a data-reveal="1" data-wcard="0" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/a1.png" alt="HeartX" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="5" data-sy="30" style="position:absolute;left:5%;top:30%;width:16px;height:16px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="10" data-sy="42" style="position:absolute;left:10%;top:42%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="3" data-sy="52" style="position:absolute;left:3%;top:52%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="80" data-sy="70" style="position:absolute;left:80%;top:70%;width:14px;height:14px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="85" data-sy="82" style="position:absolute;left:85%;top:82%;width:9px;height:9px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="60" style="position:absolute;left:78%;top:60%;width:6px;height:6px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">HeartX</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Brand Strategy &amp; Web Design</span><span style="font-weight: 500; color: #FFFFFF">2026</span></div></div></a><a data-reveal="1" data-wcard="1" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/a5.png" alt="Swave®" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="82" data-sy="55" style="position:absolute;left:82%;top:55%;width:16px;height:16px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="88" data-sy="68" style="position:absolute;left:88%;top:68%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="72" style="position:absolute;left:78%;top:72%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="85" data-sy="42" style="position:absolute;left:85%;top:42%;width:6px;height:6px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="90" data-sy="80" style="position:absolute;left:90%;top:80%;width:8px;height:8px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">King's University</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Identity &amp; CRM Strategy</span><span style="font-weight: 500; color: #FFFFFF">2025</span></div></div></a><a data-reveal="1" data-wcard="2" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/a3.png" alt="EduSpark" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="4" data-sy="24" style="position:absolute;left:4%;top:24%;width:16px;height:16px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="10" data-sy="36" style="position:absolute;left:10%;top:36%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="2" data-sy="44" style="position:absolute;left:2%;top:44%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="78" style="position:absolute;left:78%;top:78%;width:14px;height:14px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="84" data-sy="88" style="position:absolute;left:84%;top:88%;width:8px;height:8px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%; background-color: #FFFFFF00"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">EduSpark</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Brand Strategy &amp; Web Design</span><span style="font-weight: 500; color: #FFFFFF">2023</span></div></div></a><a data-reveal="1" data-wcard="3" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/a9.png" alt="Greenergy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="82" data-sy="26" style="position:absolute;left:82%;top:26%;width:14px;height:14px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="88" data-sy="38" style="position:absolute;left:88%;top:38%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="44" style="position:absolute;left:78%;top:44%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="84" data-sy="54" style="position:absolute;left:84%;top:54%;width:5px;height:5px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="90" data-sy="60" style="position:absolute;left:90%;top:60%;width:8px;height:8px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">Greenergy</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Brand Strategy &amp; Web Design</span><span style="font-weight: 500; color: #FFFFFF">2022</span></div></div></a><a data-reveal="1" data-wcard="4" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/w_lodge.png" alt="Vehicle outside a lodge entrance" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="82" data-sy="26" style="position:absolute;left:82%;top:26%;width:14px;height:14px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="88" data-sy="38" style="position:absolute;left:88%;top:38%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="44" style="position:absolute;left:78%;top:44%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="84" data-sy="54" style="position:absolute;left:84%;top:54%;width:5px;height:5px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="90" data-sy="60" style="position:absolute;left:90%;top:60%;width:8px;height:8px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">Northwood Lodge</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Campaign &amp; Photography</span><span style="font-weight: 500; color: #FFFFFF">2026</span></div></div></a><a data-reveal="1" data-wcard="5" href="Case Study.dc.html" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;color:#000;background:#eee"><img src="img_s/w_crown.png" alt="Find Your Crown posters for King's University" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"><div data-blocks="1" style="position:absolute;inset:0;pointer-events:none"></div><div data-sq="1" data-sx="82" data-sy="26" style="position:absolute;left:82%;top:26%;width:14px;height:14px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="88" data-sy="38" style="position:absolute;left:88%;top:38%;width:10px;height:10px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="78" data-sy="44" style="position:absolute;left:78%;top:44%;width:7px;height:7px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="84" data-sy="54" style="position:absolute;left:84%;top:54%;width:5px;height:5px;background:#000;z-index:5;will-change:transform"></div><div data-sq="1" data-sx="90" data-sy="60" style="position:absolute;left:90%;top:60%;width:8px;height:8px;background:#000;z-index:5;will-change:transform"></div><div style="position:absolute;right:16px;top:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);font-size:12px;color:#fff;z-index:10">+</div><div style="position: absolute; left: 0; bottom: 0; padding: 10px 16px 12px; z-index: 20; max-width: 70%"><div style="font-size: clamp(1.4rem,2.2vw,2rem); font-weight: 400; line-height: 1.2; color: #FFFFFF">Find Your Crown</div><div style="display:flex;gap:16px;margin-top:6px;font-size:12px"><span style="color: #FFFFFF">Campaign &amp; Identity</span><span style="font-weight: 500; color: #FFFFFF">2025</span></div></div></a></div></div>
+</section>
+
+<section id="case" style="display:{{ caseDisplay }};padding: clamp(40px,6vw,96px) 0 clamp(80px,10vw,144px); background-color: #0B0B0B">
+  <div id="hscroll" data-hs="1" style="display:{{ hDisp }};position:relative">
+<div style="position:sticky;top:0;height:100vh;overflow:hidden">
+<div id="htrack" data-track="1" style="display:flex;align-items:flex-start;height:100%;box-sizing:border-box;padding:12vh 8vw 9vh;gap:clamp(20px,2.4vw,36px);will-change:transform;width:max-content">
+<div data-h="1" style="flex:none;width:min(440px,78vw);align-self:center;margin-top:-4vh"><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;margin-bottom:6px">BMW</div><h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(56px,7vw,104px);line-height:.9">OMA’S TAKE</h2>
+<div style="display:flex;gap:clamp(16px,2vw,32px);margin-top:48px"><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(44px,5.2vw,80px);line-height:1;color:#e9e6f0">4M</div><div style="font-size:14px;color:#d9d5cc;margin-top:8px">Revenue</div></div><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(44px,5.2vw,80px);line-height:1;color:#e9e6f0">85%</div><div style="font-size:14px;color:#d9d5cc;margin-top:8px">User Retention</div></div><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(44px,5.2vw,80px);line-height:1;color:#e9e6f0">100K</div><div style="font-size:14px;color:#d9d5cc;margin-top:8px">Website visitors</div></div></div></div>
+<div data-h="1" style="flex:none;position:relative;height:74vh;aspect-ratio:405/721;overflow:hidden;background:#111"><img src="img_s/c_track.png" alt="BMW M3 CS on the track" style="width:100%;height:100%;object-fit:cover;display:block"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))"></div><div style="position:absolute;left:7%;bottom:6%;right:7%;display:flex;gap:14%"><div><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;color:#d9d5cc;font-size:9px">Product</div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(18px,1.9vw,26px);line-height:1.1">New BMW M3</div></div><div><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;color:#d9d5cc;font-size:9px">Services</div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(10px,.95vw,13px);line-height:1.35;color:#e8e4dc">Integrated Campaign<br>Social Strategy<br>Brand Platform<br>Storytelling</div></div></div></div>
+<div style="flex:none;width:clamp(300px,42vw,620px);height:74vh;display:flex;flex-direction:column;justify-content:space-between"><h3 data-h="1" style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(34px,4.2vw,64px);line-height:1">We gave a sneak peek at an unreleased BMW to the only ones we could trust not to leak it.</h3>
+<div style="display:flex;gap:clamp(10px,1vw,14px)"><div data-h="1" style="flex:none;overflow:hidden;background:#111;height:36vh;aspect-ratio:.9"><img src="img_s/c_wheel.png" alt="BMW M3 CS wheel detail" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div><div data-h="1" style="flex:none;overflow:hidden;background:#111;height:36vh;aspect-ratio:.9"><img src="img_s/c_person.png" alt="Person stepping out of the BMW in the garage" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div></div>
+<div data-h="1" style="flex:none;width:min(340px,76vw);align-self:flex-end;margin-bottom:6vh"><p style="margin:0 0 20px;font-weight:300;font-size:clamp(14px,1.2vw,17px);line-height:1.65;color:#d9d5cc">The BMW M3 CS Handschalter (Manual) was different. Limited to just 40 units in Canada, it remained one of the brand’s best kept secrets, internally nicknamed the “super cool edition” to help keep the project under wraps.</p><p style="margin:0 0 20px;font-weight:300;font-size:clamp(14px,1.2vw,17px);line-height:1.65;color:#d9d5cc">To build anticipation for the launch, BMW decided to create a teaser. The challenge was finding someone who could see the vehicle without spilling the beans. BMW fans would leak it. Rival fans would leak it. Even internal stakeholders couldn’t necessarily be trusted.</p></div>
+<div data-h="1" style="flex:none;overflow:hidden;background:#111;height:46vh;aspect-ratio:700/612;align-self:flex-start;margin-top:4vh"><img src="img_s/c_wagon.png" alt="BMW M3 CS Touring on the track" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div>
+<div data-h="1" style="flex:none;width:min(420px,76vw);align-self:flex-end;margin-bottom:8vh"><h3 style="margin:0 0 20px;font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(28px,3vw,44px);line-height:1.02">So instead of showing the car to people most likely to obsess over it, we showed it to those least likely to embrace it: grandmas.</h3></div>
+<div data-h="1" style="flex:none;overflow:hidden;background:#111;height:60vh;aspect-ratio:460/589"><img src="img_s/c_garage.png" alt="BMW M3 CS in the garage bay" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div>
+<div data-h="1" style="flex:none;width:min(300px,70vw);align-self:center"><p style="margin:0 0 20px;font-weight:300;font-size:clamp(14px,1.2vw,17px);line-height:1.65;color:#d9d5cc">The contrast between the raw performance machine and the unimpressed reactions created a reveal that felt entirely M: confident and clever, without taking itself too seriously.</p></div>
+<div data-h="1" style="flex:none;overflow:hidden;background:#111;height:52vh;aspect-ratio:518/526;align-self:flex-start;margin-top:6vh"><img src="img_s/c_interior.png" alt="BMW M3 CS carbon interior" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div>
+<div style="flex:none;width:8vw"></div>
+</div>
+<div style="position:absolute;left:8vw;right:8vw;bottom:4vh;height:1px;background:rgba(245,242,237,.15)"><div id="hbar" data-bar="1" style="height:100%;background:#ed3d02;transform-origin:left;transform:scaleX(0)"></div></div>
+</div></div><div class="rd-pad" style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5.5vw,80px)"><div style="display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap" role="group" aria-label="Case study layout"><button onClick="{{ setCollage }}" aria-pressed="{{ colPressed }}" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;min-height:40px;padding:10px 18px;border-radius:999px;cursor:pointer;border:1px solid rgba(245,242,237,.3);background:{{ colBg }};color:{{ colInk }};transition:background .25s,color .25s">Layout 1 · Collage</button><button onClick="{{ setHoriz }}" aria-pressed="{{ hPressed }}" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;min-height:40px;padding:10px 18px;border-radius:999px;cursor:pointer;border:1px solid rgba(245,242,237,.3);background:{{ hBg }};color:{{ hInk }};transition:background .25s,color .25s">Layout 2 · Horizontal</button></div><div style="display:{{ colDisp }}">
+    <div data-reveal="1" style="display:flex;gap:16px;align-items:center;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;margin-bottom:24px">BMW · Case study</div>
+    <h2 data-reveal="1" style="margin:0 0 clamp(56px,7vw,96px);font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(64px,11vw,168px);line-height:.88">OMA’S TAKE</h2>
+
+    
+
+    
+
+    <div class="rd-stack" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px,6vw,96px); align-items: end; width: 1194px; height: 340px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
+      
+      <h3 data-reveal="1" style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(36px,4.6vw,64px);line-height:1;letter-spacing:.01em;text-wrap:balance">We gave a sneak peek at an unreleased BMW to the only ones we could trust not to leak it.</h3><div data-reveal="1" style="display:flex;flex-direction:column;gap:20px;font-weight:300;font-size:17px;line-height:1.65;color:#d9d5cc;max-width:52ch;text-wrap:pretty">
+        <p style="margin:0">The BMW M3 CS Handschalter (Manual) was different. Limited to just 40 units in Canada, it remained one of the brand’s best kept secrets, internally nicknamed the “super cool edition” to help keep the project under wraps.</p><p style="margin:0">To build anticipation for the launch, BMW decided to create a teaser. The challenge was finding someone who could see the vehicle without spilling the beans. BMW fans would leak it. Rival fans would leak it. Even internal stakeholders couldn’t necessarily be trusted.</p>
+        
+      </div>
+    </div><div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:clamp(56px,7vw,96px) 0;border-top:1px solid rgba(245,242,237,.12);border-bottom:1px solid rgba(245,242,237,.12);padding:40px 0">
+      <sc-for list="{{ stats }}" as="n" hint-placeholder-count="3">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:10px">
+          <span data-count="{{ n.to }}" data-suffix="{{ n.suffix }}" data-fmt="{{ n.fmt }}" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,8vw,112px);line-height:.9;color:#f5f2ed;font-variant-numeric:tabular-nums">{{ n.label }}</span>
+          <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#889bb1">{{ n.caption }}</span>
+        </div>
+      </sc-for>
+    </div><div style="overflow:hidden;padding:clamp(110px,12vw,180px) 0;margin-top:clamp(24px,4vw,64px)"><div id="collage" style="position:relative;width:100%;aspect-ratio:762/1720">
+<div data-par="0.12" style="position:absolute;left:0.000%;top:1.802%;width:52.756%;height:22.209%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_wheel.png" alt="BMW M3 CS wheel detail" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+<div data-par="-0.18" style="position:absolute;left:69.291%;top:11.163%;width:30.709%;height:23.081%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_track.png" alt="BMW M3 CS on the track" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+<div data-par="0.06" style="position:absolute;left:13.255%;top:28.663%;width:43.307%;will-change:transform"><p data-reveal="1" style="margin:0;font-family:'Bebas Neue',sans-serif;font-size:clamp(13px,2.3vw,32px);line-height:1.05;text-transform:uppercase;color:#fff;text-wrap:balance">So instead of showing the car to people most likely to obsess over it, we showed it to those least likely to embrace it: grandmas.</p></div>
+<div data-par="-0.08" style="position:absolute;left:29.790%;top:38.023%;width:48.819%;height:18.895%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_wagon.png" alt="BMW M3 CS Touring on the track" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+<div data-par="0.16" style="position:absolute;left:0.000%;top:61.453%;width:31.496%;height:19.244%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_person.png" alt="Person stepping out of the BMW in the garage" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+<div data-par="-0.05" style="position:absolute;left:38.583%;top:64.128%;width:30.840%;will-change:transform"><p data-reveal="1" style="margin:0;font-family:'Bebas Neue',sans-serif;font-size:clamp(13px,2.3vw,32px);line-height:1.05;text-transform:uppercase;color:#fff;text-wrap:balance">The contrast between the raw performance machine and the unimpressed reactions created a reveal that felt entirely M: confident and clever, without taking itself too seriously.</p></div>
+<div data-par="-0.2" style="position:absolute;left:76.772%;top:58.663%;width:23.228%;height:18.198%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_garage.png" alt="BMW M3 CS in the garage bay" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+<div data-par="0.1" style="position:absolute;left:36.089%;top:79.128%;width:36.089%;height:16.221%;will-change:transform"><div data-reveal="1" style="width:100%;height:100%;overflow:hidden;background:#111"><img src="img_s/c_interior.png" alt="BMW M3 CS carbon interior" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.04)"></div></div>
+</div></div></div><a data-reveal="1" href="#more" style="display:flex;align-items:center;justify-content:space-between;margin-top:clamp(64px,8vw,112px);padding:28px 0;border-top:1px solid rgba(245,242,237,.12);border-bottom:1px solid rgba(245,242,237,.12);color:#f5f2ed;transition:padding .4s cubic-bezier(.22,1,.36,1)" style-hover="padding-left:16px;padding-right:16px;color:#f5f2ed">
+      <div><div style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;color:#889bb1;margin-bottom:6px">UP NEXT</div><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,64px);line-height:1">KINGS UNI</div></div>
+      <span style="font-size:32px;color:#ed3d02">→</span>
+    </a>
+  </div>
+</section>
+
+<section id="case-g" aria-label="Greenergy case study" style="display:{{ gDisplay }};background:#0b0b0b;position:relative">
+<div data-hs="1" style="position:relative"><div style="position:sticky;top:0;height:100vh;overflow:hidden">
+<div data-track="1" style="display:flex;align-items:flex-start;height:100%;box-sizing:border-box;padding:14vh 8vw 9vh;gap:clamp(16px,1.8vw,28px);width:max-content;will-change:transform">
+<div data-h="1" style="flex:none;width:min(380px,76vw);align-self:center"><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;font-size:9px">BMW</div><h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(40px,4.4vw,68px);line-height:.95">Oma’s Take</h2><div style="display:flex;gap:clamp(14px,1.8vw,28px);margin-top:44px"><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(34px,4vw,60px);line-height:1;color:#e9e6f0">4M</div><div style="font-size:12px;color:#d9d5cc;margin-top:8px">Revenue</div></div><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(34px,4vw,60px);line-height:1;color:#e9e6f0">85%</div><div style="font-size:12px;color:#d9d5cc;margin-top:8px">User Retention</div></div><div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(34px,4vw,60px);line-height:1;color:#e9e6f0">100K</div><div style="font-size:12px;color:#d9d5cc;margin-top:8px">Website visitors</div></div></div></div>
+<div data-h="1" style="flex:none;position:relative;height:66vh;aspect-ratio:140/250;overflow:hidden;background:#111"><img src="img_s/c_track.png" alt="BMW M3 CS on the track" style="width:100%;height:100%;object-fit:cover;display:block"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.75))"></div><div style="position:absolute;left:8%;bottom:6%;right:6%;display:flex;gap:12%"><div><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;color:#d9d5cc;font-size:8px">Product</div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(14px,1.4vw,20px);line-height:1.1">New BMW M3</div></div><div><div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;color:#d9d5cc;font-size:8px">Services</div><div style="font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(8px,.75vw,11px);line-height:1.35;color:#e8e4dc">Integrated Campaign<br>Social Strategy<br>Brand Platform<br>Storytelling</div></div></div></div>
+<div style="flex:none;height:66vh;display:flex;flex-direction:column;justify-content:space-between"><h3 data-h="1" style="margin:0;max-width:clamp(220px,18vw,300px);font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(20px,1.8vw,28px);line-height:1.02">We gave a sneak peek at an unreleased BMW to the only ones we could trust not to leak it.</h3><div style="display:flex;gap:clamp(8px,.9vw,14px)"><div data-h="1" style="flex:none;overflow:hidden;background:#111;height:36vh;aspect-ratio:88/118"><img src="img_s/c_wheel.png" alt="BMW M3 CS wheel detail" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1);" style-hover="transform:scale(1.04)"></div><div data-h="1" style="flex:none;overflow:hidden;background:#111;height:36vh;aspect-ratio:96/118"><img src="img_s/c_person.png" alt="Person stepping out of the BMW in the garage" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1);" style-hover="transform:scale(1.04)"></div></div></div>
+<div data-h="1" style="flex:none;width:min(210px,70vw);align-self:flex-end;margin-bottom:0"><p style="margin:0 0 18px;font-weight:300;font-size:clamp(12px,1.05vw,15px);line-height:1.6;color:#e8e4dc">The BMW M3 CS Handschalter (Manual) was different. Limited to just 40 units in Canada, it remained one of the brand’s best kept secrets, internally nicknamed the “super cool edition” to help keep the project under wraps.</p><p style="margin:0 0 18px;font-weight:300;font-size:clamp(12px,1.05vw,15px);line-height:1.6;color:#e8e4dc">To build anticipation for the launch, BMW decided to create a teaser. The challenge was finding someone who could see the vehicle without spilling the beans. BMW fans would leak it. Rival fans would leak it. Even internal stakeholders couldn’t necessarily be trusted.</p></div>
+<div data-h="1" style="flex:none;position:relative;height:66vh;aspect-ratio:380/248;overflow:hidden;background:#050505;margin-left:clamp(24px,4vw,72px)"><img src="img_s/c_wheel.png" alt="Film still, wheel in motion" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.28) blur(10px) contrast(1.2);transform:scale(1.15)"><button aria-label="Play film" style="position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.1);cursor:pointer;display:grid;place-items:center"><svg width="16" height="16" viewBox="0 0 20 20" fill="#fff" aria-hidden="true"><polygon points="5,2 18,10 5,18"></polygon></svg></button></div>
+<div data-h="1" style="flex:none;overflow:hidden;background:#111;height:66vh;aspect-ratio:168/248"><img src="img_s/c_garage.png" alt="BMW M3 CS in the garage bay" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1);" style-hover="transform:scale(1.04)"></div>
+<div data-h="1" style="flex:none;overflow:hidden;background:#111;height:66vh;aspect-ratio:222/248"><img src="img_s/c_interior.png" alt="BMW M3 CS carbon interior" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.22,1,.36,1);" style-hover="transform:scale(1.04)"></div>
+<div data-h="1" style="flex:none;height:66vh;aspect-ratio:160/248;overflow:hidden;background:#111"><img src="img_s/a4.png" alt="The new M3 CS Touring teaser" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div data-h="1" style="flex:none;width:min(240px,70vw);height:66vh;display:flex;flex-direction:column;justify-content:space-between"><h3 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;text-transform:uppercase;color:#fff;font-size:clamp(18px,1.6vw,24px);line-height:1.1">So instead of showing the car to people most likely to obsess over it, we showed it to those least likely to embrace it: grandmas.</h3><p style="margin:0 0 18px;font-weight:300;font-size:clamp(12px,1.05vw,15px);line-height:1.6;color:#e8e4dc">The contrast between the raw performance machine and the unimpressed reactions created a reveal that felt entirely M: confident and clever, without taking itself too seriously.</p></div>
+
+</div>
+<div style="position:absolute;left:8vw;right:8vw;bottom:4vh;height:1px;background:rgba(245,242,237,.15)"><div data-bar="1" style="height:100%;background:#ed3d02;transform-origin:left;transform:scaleX(0)"></div></div>
+</div></div></section>
+
+<section id="more" style="padding: 0 0 clamp(80px,10vw,144px); background-color: #000000; padding-bottom: 0px">
+  <div class="rd-pad" style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5.5vw,80px)">
+    <h2 data-reveal="1" style="margin: 0 0 48px; font-family: 'Bebas Neue',sans-serif; font-weight: 400; font-size: 44px; text-align: center">MORE OF WHAT WE DO</h2>
+    <div class="rd-cards" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+      <sc-for list="{{ cards }}" as="c" hint-placeholder-count="4">
+        <a data-reveal="1" href="#work" style="position:relative;display:block;aspect-ratio:311/300;border-radius:5px;overflow:hidden;color:#fff;background:#161616">
+          <div role="img" aria-label="" style-hover="transform:scale(1.05)" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.22,1,.36,1);background:url({{ c.img }}) center/cover no-repeat"></div>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.75))"></div>
+          <div style="position:absolute;left:20px;right:20px;bottom:20px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
+            <div><div style="font-weight:500;font-size:18px">{{ c.brand }}</div><div style="font-size:14px;color:#e2e8f0;margin-top:4px">Campaign Title | 2025</div></div>
+            <span style="font-size:20px;color:#fff">↗</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="about" aria-label="Who we are" style="scroll-margin-top: 0; position: relative; color: #f5f2ed; background-color: #000000; height: 1446px">
+<div class="rd-pad" style="padding: clamp(80px,10vw,144px) clamp(24px,5.5vw,80px) 0; background-color: #000000; padding-top: 124px"><div style="max-width:1280px;margin:0 auto"><div data-reveal="1" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:56px;border-bottom:1px solid rgba(245,242,237,.12);padding-bottom:20px"><h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,7vw,96px);line-height:.95">how we do it</h2><span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;color:#889bb1">02 / 06</span></div></div></div>
+<div id="ab-wrap" class="ab-wrap" style="position:relative">
+<div class="ab-stick" style="position:sticky;top:0;height:80vh;overflow:hidden">
+
+<div class="ab-panels" style="display:flex;height:100%">
+<sc-for list="{{ panels }}" as="p" hint-placeholder-count="2">
+<div class="ab-panel" tabindex="0" role="group" aria-label="{{ p.headline }}" onMouseEnter="{{ p.enter }}" onMouseLeave="{{ p.leave }}" onFocus="{{ p.enter }}" onBlur="{{ p.leave }}" onClick="{{ p.enter }}" style="position:relative;flex:1 1 50%;min-width:0;overflow:hidden;cursor:default;outline-offset:-4px;border-left:1px solid {{ p.edge }}">
+<div class="ab-bg" style="position:absolute;inset:-4%;background:url({{ p.img }}) center/cover no-repeat;opacity:{{ p.imgOp }};transform:scale({{ p.imgScale }});filter:grayscale({{ p.gray }});transition:opacity .9s cubic-bezier(.22,1,.36,1),transform 1.4s cubic-bezier(.22,1,.36,1),filter .9s"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.55),rgba(11,11,11,.82))"></div>
+<div style="position:relative;height:100%;box-sizing:border-box;padding:clamp(88px,14vh,150px) clamp(24px,4.5vw,72px) 8vh;display:flex;flex-direction:column;justify-content:flex-end;gap:clamp(24px,4vh,48px)">
+<div style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;color:#d9d5cc">{{ p.tag }}</div>
+<div style="overflow:hidden;padding-bottom:.08em"><h3 class="ab-hl" style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(44px,5.6vw,92px);line-height:.92;color:#f5f2ed;max-width:11em;transform:translateY({{ p.hlY }}%);transition:transform .9s cubic-bezier(.22,1,.36,1)">{{ p.headline }}</h3></div>
+<ul class="ab-list" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(14px,2.2vh,24px);max-width:460px;opacity:{{ p.listOp }};transform:translateY({{ p.listY }}px);transition:opacity .7s cubic-bezier(.22,1,.36,1) .12s,transform .8s cubic-bezier(.22,1,.36,1) .12s">
+<sc-for list="{{ p.items }}" as="it" hint-placeholder-count="3">
+<li style="display:flex;gap:18px;align-items:flex-start;padding-top:14px;border-top:1px solid rgba(245,242,237,.18)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ed3d02" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="{{ it.d }}"></path></svg><p style="margin:0;font-weight:300;font-size:15px;line-height:1.55;color:#e8e4dc">{{ it.t }}</p></li>
+</sc-for>
+</ul>
+</div>
+</div>
+</sc-for>
+</div>
+<div class="rd-hide-m" style="position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:5;pointer-events:none;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#889bb1;font-size:10px;opacity:{{ hintOp }};transition:opacity .5s">Move across the page</div>
+</div><div class="rd-pad" style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5.5vw,80px)">
+    
+    <div class="rd-cards" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+      <sc-for list="{{ cards }}" as="c" hint-placeholder-count="4">
+        
+      </sc-for>
+    </div>
+  </div></div></section>
+
+<div id="team" class="rd-pad" style="padding: clamp(80px,10vw,144px) clamp(24px,5.5vw,80px) 0; background: #0b0b0b; padding-top: 124px"><div style="max-width:1280px;margin:0 auto"><div data-reveal="1" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:40px;border-bottom:1px solid rgba(245,242,237,.12);padding-bottom:20px"><h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,7vw,96px);line-height:.95">WHO WE ARE</h2><span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;color:#889bb1">03 / 06</span></div></div></div>
+
+
+
+
+
+
+<section aria-label="Who we are" style="position: relative; height: 95vh; min-height: 600px; width: 100%; overflow: hidden; font-family: 'DM Sans',sans-serif; color: #fff; background: #0b0b0b">
+  <sc-for list="{{ teamSlides }}" as="s" hint-placeholder-count="8">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:url({{ s.img }}) center/cover no-repeat;opacity:{{ s.op }};filter:grayscale(1) brightness(.5) contrast(1.15);transition:opacity .7s ease-out"></div>
+  </sc-for>
+  <div style="position: absolute; inset: 0; background: linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.12) 55%,rgba(0,0,0,.4))"></div>
+  <div style="position: relative; z-index: 10; display: flex; flex-direction: column; justify-content: space-between; padding-right: 182px; padding-left: 133px; opacity: 1; padding-top: 1px; padding-bottom: 0px; height: 100%; box-sizing: border-box">
+    
+    <div class="wr-top" style="overflow: visible; padding-top: clamp(56px,18%,479px); padding-right: 0; padding-left: clamp(0px,16vw,309px); height: auto; width: auto; gap: 0px; padding-bottom: 4px; box-sizing: border-box; align-self: auto; justify-content: flex-start; align-items: flex-start">
+      
+      
+    <p class="wr-bio" style="margin: 0; font-weight: 500; line-height: 1.625; color: rgba(255,255,255,.8); animation: {{ teamFade }} .5s ease; max-width: 20.77rem">{{ teamActive.bio }}</p></div><div class="wr-bot" style="display: flex; flex-direction: column; gap: 32px; padding-left: 171px; padding-right: 0; padding-top: 0; padding-bottom: 64px; width: auto; height: auto">
+      <div class="wr-pick" role="tablist" aria-label="Team members">
+        <sc-for list="{{ teamSlides }}" as="s" hint-placeholder-count="8">
+          <button aria-label="Show {{ s.name }}" aria-selected="{{ s.sel }}" role="tab" onClick="{{ s.pick }}" style="display:flex;flex:none;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;cursor:pointer;min-width:40px">
+            <span style="width:4px;height:4px;border-radius:50%;background:#fff;opacity:{{ s.dot }};transition:opacity .3s"></span>
+            <span class="wr-av" role="img" aria-label="{{ s.name }}" style="display:block;overflow:hidden;border-radius:50%;background:url({{ s.img }}) center/cover no-repeat;filter:grayscale(1) brightness(.85) contrast(1.1)"></span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.2);padding-top:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;font-size:14px;font-weight:500">
+        <span style="animation:{{ teamFade }} .5s ease">{{ teamActive.name }}</span>
+        <span class="wr-role" style="color:rgba(255,255,255,.7)">{{ teamActive.role }}</span>
+        <span class="wr-ten" style="color:rgba(255,255,255,.7)">In the business since 2020</span>
+        
+      </div>
+    </div>
+  </div>
+</section><section id="contact" style="background: #f5f2ed; color: #0b0b0b; padding: 0 0 clamp(80px,10vw,144px); width: 100%; height: auto; box-sizing: border-box; padding-left: 467px; padding-bottom: 29px">
+  
+<div class="rd-pad rd-stack" style="max-width: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1.3fr 1fr; gap: 58px; align-items: flex-end; width: 100%; height: auto; box-sizing: border-box; margin-top: -8px; margin-right: -8px; margin-bottom: -8px; margin-left: -8px; padding-top: 54px; padding-right: 333px; padding-bottom: 59px; padding-left: 0px; justify-content: space-evenly">
+    
+    <h2 data-reveal="1" style="margin: 0; font-family: 'Bebas Neue',sans-serif; font-weight: 400; font-size: clamp(72px,13vw,200px); line-height: .86; color: #0b0b0b; width: 791px; height: 158px; padding-left: 355px; margin-top: 218px">LET’S TALK</h2><div data-reveal="1" style="display:flex;flex-direction:column;gap:32px">
+      <p style="margin:0;font-weight:300;font-size:16px;line-height:1.6;max-width:40ch;color:#0b0b0b">Whether you're launching a brand, scaling a campaign, or need a technology partner — we'd love to hear about it.</p>
+      <div style="display:flex;flex-direction:column">
+        <sc-for list="{{ contacts }}" as="k" hint-placeholder-count="3">
+          <a href="{{ k.href }}" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-top:1px solid rgba(0,0,0,.14);color:#0b0b0b;transition:padding .35s cubic-bezier(.22,1,.36,1),color .25s" style-hover="padding-left:12px;padding-right:12px;color:#ed3d02">
+            <div><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.65;margin-bottom:6px">{{ k.label }}</div><div style="font-size:16px">{{ k.value }}</div></div>
+            <span style="font-size:18px">↗</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </div></section>
+
+<footer class="rd-pad" style="background:#0b0b0b;padding:64px clamp(24px,5.5vw,80px) 32px">
+  <div class="rd-stack" style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px">
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:.05em">RICHMOND DAY</div>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:14px;color:#d9d5cc">
+      <li><a href="#what-we-do">What We Do</a></li><li><a href="#work">Our Work</a></li><li><a href="#about">How We Do it</a></li><li><a href="#team">Who We Are</a></li><li><a href="#contact">Let’s Connect</a></li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;color:#d9d5cc">
+      <a href="mailto:info@yourcompany.com">connect@richmondday.com</a><a href="tel:+16505550111">+1 (650) 555-0111</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Liberty+Village+Toronto+Canada" target="_blank" rel="noopener">Liberty Village, Toronto, Canada</a>
+      <div style="display:flex;gap:20px;margin-top:8px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">X</a><a href="#">YouTube</a></div>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:48px auto 0;padding-top:20px;border-top:1px solid rgba(245,242,237,.12);font-size:13px;color:#889bb1">Copyright © Richmond Day</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const R=p=>(window.__resources&&window.__resources[p.replace(/[^a-z0-9]/gi,'_')])||p;
+class Component extends DCLogic {
+  state = { ti: 0, tn: 0, side: null, layout: 'col', caseOpen: false, hov: -1, active: 2, scrolled: false, lit: -1 };
+  sph = [['a1','Track Day','BMW · Campaign'],['a2','Wheel Study','BMW · M3 CS'],['a3','Studio Session','BMW · M3 CS'],['a4','M3 CS Touring','BMW · Teaser',1],['a5','Design Declares UK','Web Design'],['a6','Athlete Film','Social Strategy'],['a8','Oma’s Take','BMW · Case study'],['a9','Control Detail','Visual Branding'],['a2','Campaign Title','Client | 2025'],['a5','Campaign Title','Client | 2025'],['a1','Campaign Title','Client | 2025'],['a3','Campaign Title','Client | 2025']].map((s,i)=>({i,img:'img_s/'+s[0]+'.png',title:s[1],place:s[2],tall:s[3]?'1':'0',fit:s[3]?'contain':'cover'}));
+  svc = [
+    ['Social Strategy','Platform-native strategy and content systems that give brands a consistent voice and a reason to be followed.','img_s/s_strategy.png'],
+    ['Visual Branding','Identity systems, art direction and guidelines built to hold up across every touchpoint.','img_s/s_branding.png'],
+    ['3D Modeling','Transform your concepts into high-fidelity digital assets with our premium 3D vehicle modeling services. We specialize in creating production-ready assets, offering everything from low-poly models for video games to hyper-realistic meshes for marketing and concept design.','img_s/s_3d.png'],
+    ['Web Design','Interfaces and digital products shaped around how people actually use them.','img_s/s_web.png'],
+    ['CRM Strategy','Lifecycle programs and retention flows that turn one-time customers into repeat ones.','img_s/s_crm.png'],
+    ['Data Platforms','Data foundations and dashboards that make performance visible and decisions faster.','img_s/s_data.png']
+  ];
+  componentDidMount() {
+    this.rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.onScroll = () => { const s = window.scrollY > 40; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const ease = 'cubic-bezier(.22,1,.36,1)';
+    if (!this.rm) els.forEach(e => { e.style.opacity = '0'; e.style.transform = 'translateY(24px)'; });
+    this.initSphere();this.initCollage();this.initAbout();this.initHScroll();
+    const openCase=(w)=>{this.setState({caseOpen:w},()=>setTimeout(()=>{const s=document.getElementById(w==='g'?'case-g':'case');if(s)window.scrollTo({top:s.getBoundingClientRect().top+window.scrollY-60,behavior:this.rm?'auto':'smooth'});},60));};
+    this.onCardClick=e=>{const a=e.target.closest&&e.target.closest('[data-wcard],a[href="#case"]');if(!a)return;e.preventDefault();const c=e.target.closest('[data-wcard]');openCase(c&&c.dataset.wcard==='3'?'g':'bmw');};
+    document.addEventListener('click',this.onCardClick);
+    if(location.hash==='#case')this.setState({caseOpen:'bmw'});this.initWhat();this.initWork();
+    this.io = new IntersectionObserver(ents => ents.forEach(en => {
+      if (!en.isIntersecting) return;
+      const e = en.target; const sib = Array.from(e.parentElement.children).filter(c => c.hasAttribute('data-reveal')).indexOf(e);
+      e.style.transition = `opacity .8s ${ease} ${Math.max(0, sib) * 70}ms, transform .8s ${ease} ${Math.max(0, sib) * 70}ms`;
+      e.style.opacity = '1'; e.style.transform = 'none';
+      const c = e.querySelector('[data-count]'); if (c) this.count(c);
+      this.io.unobserve(e);
+    }), { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(e => this.io.observe(e));
+  }
+  count(el) {
+    const to = parseFloat(el.dataset.count), suf = el.dataset.suffix || '', fmt = el.dataset.fmt || '';
+    const show = v => { el.textContent = (fmt === 'K' || fmt === 'M' ? Math.round(v) : Math.round(v)) + (fmt === 'K' || fmt === 'M' ? fmt : '') + suf; };
+    if (this.rm) return show(to);
+    const t0 = performance.now(), d = 1400;
+    const step = t => { const p = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - p, 4); show(to * e); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); this.io && this.io.disconnect(); this.stopSphere && this.stopSphere(); this.stopCollage && this.stopCollage(); this.stopAbout && this.stopAbout(); this.stopH && this.stopH(); document.removeEventListener('click',this.onCardClick); this.stopWork && this.stopWork(); }
+  initWhat() {
+    const box=document.querySelector('[data-wwd]');if(!box)return;const bl=Array.from(box.querySelectorAll('[data-pop]'));
+    if(this.rm){bl.forEach(b=>{b.style.opacity=.9;b.style.transform='none'});return;}
+    const io=new IntersectionObserver(en=>{if(!en[0].isIntersecting)return;bl.forEach((b,i)=>{b.style.transition='transform .35s cubic-bezier(.22,1,.36,1) '+(.5+i*.05)+'s,opacity .35s cubic-bezier(.22,1,.36,1) '+(.5+i*.05)+'s';b.style.opacity=.9;b.style.transform='scale(1)';});io.disconnect();},{threshold:.2});io.observe(box);
+  }
+  initCollage() {
+    const box=document.getElementById('collage');if(!box||this.rm)return;
+    const it=Array.from(box.querySelectorAll('[data-par]')).map(e=>({e,s:+e.dataset.par,y:0}));
+    const frame=()=>{const r=box.getBoundingClientRect(),vh=innerHeight;
+      if(r.bottom>-200&&r.top<vh+200){const off=(vh/2-(r.top+r.height/2));
+        it.forEach(o=>{const t=Math.max(-110,Math.min(110,off*o.s));o.y+=(t-o.y)*.09;o.e.style.transform='translate3d(0,'+o.y.toFixed(2)+'px,0)';});}
+      this.craf=requestAnimationFrame(frame);};
+    frame();this.stopCollage=()=>cancelAnimationFrame(this.craf);
+  }
+  initHScroll() {
+    const hs=Array.from(document.querySelectorAll('[data-hs]')).map(wrap=>({wrap,tr:wrap.querySelector('[data-track]'),bar:wrap.querySelector('[data-bar]'),lastH:0}));
+    hs.forEach(o=>o.items=Array.from(o.tr.querySelectorAll('[data-h]')));
+    const frame=()=>{
+      hs.forEach(o=>{if(o.wrap.offsetParent===null)return;
+        const vw=innerWidth,vh=innerHeight,dist=Math.max(0,o.tr.scrollWidth-vw),H=Math.round(dist+vh);
+        if(H!==o.lastH){o.wrap.style.height=H+'px';o.lastH=H;}
+        const r=o.wrap.getBoundingClientRect(),p=dist>0?Math.max(0,Math.min(1,-r.top/dist)):0;
+        o.tr.style.transform='translate3d('+(-p*dist).toFixed(1)+'px,0,0)';
+        if(o.bar)o.bar.style.transform='scaleX('+p.toFixed(4)+')';
+        o.items.forEach(e=>{if(this.rm){e.style.opacity=1;return;}const l=e.getBoundingClientRect().left,t=Math.max(0,Math.min(1,(vw*.97-l)/(vw*.22)));e.style.opacity=t.toFixed(3);e.style.transform='translate3d('+((1-t)*70).toFixed(1)+'px,0,0)';});});
+      this.hraf=requestAnimationFrame(frame);};
+    frame();this.stopH=()=>cancelAnimationFrame(this.hraf);
+  }
+  team = [
+    ['Andrei Baranov','Design Chief','f9e684f3-dc19-469a-8142-eb391bfc601b','20260727_225202','Andrei sets the visual direction of every project. He turns rough ideas into clear, confident design languages that feel effortless yet leave a lasting impression.'],
+    ['Daria Lebedeva','Interface Expert','7937e8ea-3b0a-46ab-919f-775627695a23','20260727_225149','Daria crafts interfaces people understand at first glance. Every screen she designs balances clarity and character, making complex products feel simple and warm.'],
+    ['Ivan Sorokin','Concept Chief','f2b1fc04-776a-4f2e-879b-b764ea762e77','20260727_225153','Ivan shapes the ideas behind the work. He digs into every brief until the core story emerges, then builds concepts that give each project its reason to exist.'],
+    ['Anna Fedorova','Brand Consultant','f456fd9c-8938-4103-836d-51b0e88a9510','20260727_225847','Anna helps brands find their voice. From positioning to tone, she builds identities that stay consistent everywhere and grow stronger with every appearance.'],
+    ['Pavel Smirnov','Movement Artist','3958a522-6203-4f84-a7fa-3b3f1dcd7256','20260727_225854','Pavel brings stillness to life. His motion work adds rhythm and personality to every product, guiding attention with transitions that feel natural and precise.'],
+    ['Olga Kravtsova','UX Specialist','fcefaa07-6851-4fdc-ac7b-98754ac9d5c4','20260727_231111','Olga studies how people actually use what we make. Her research keeps every decision grounded in real behavior, so the work serves users and not assumptions.'],
+    ['Igor Zakharenko','Graphic Creator','9a1505aa-8c44-4046-aff8-1aa0bc7b3ef3','20260727_231124','Igor gives every project its finishing touch. From typography to illustration, he sweats the visual details that separate good work from unforgettable work.'],
+    ['Ksenia Romanova','Studio Head','62e8b331-89be-4d35-84fe-330ba9b1b64f','20260727_230413','Ksenia keeps the studio moving as one. She connects people, plans, and priorities so every project ships on time without losing the craft it deserves.']
+  ];
+  timg(t) { return 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_' + t[3] + '_' + t[2] + '.png&w=1280&q=85'; }
+  initAbout() {
+    const w=document.getElementById('ab-wrap'),t=document.getElementById('ab-title');if(!w||!t)return;
+    const frame=()=>{const r=w.getBoundingClientRect(),vh=innerHeight;
+      if(r.bottom>0&&r.top<vh&&innerWidth>860){const p=Math.max(0,Math.min(1,-r.top/(vh*.6))),e=1-Math.pow(1-p,3),h=t.offsetHeight,y0=Math.max(70,(vh-h)/2),y1=78;
+        const y=this.rm?y0:y0+(y1-y0)*e,s=this.rm?1:1-.76*e;
+        t.style.transform='translate3d(0,'+y.toFixed(1)+'px,0) scale('+s.toFixed(4)+')';}
+      this.abraf=requestAnimationFrame(frame);};
+    frame();this.stopAbout=()=>cancelAnimationFrame(this.abraf);
+  }
+  initWork() {
+    const sec=document.getElementById('work'); if(!sec)return;
+    const fl=Array.from(sec.querySelectorAll('[data-float]')).map(e=>({e,i:+e.dataset.float,y:0}));
+    const cards=Array.from(sec.querySelectorAll('[data-wcard]')).map(card=>{
+      const box=card.querySelector('[data-blocks]'),blocks=[];
+      for(let r=0;r<8;r++)for(let c=0;c<12;c++){const b=document.createElement('div');b.style.cssText='position:absolute;left:'+(c*100/12)+'%;top:'+(r*100/8)+'%;width:calc('+(100/12)+'% + 1px);height:calc('+(100/8)+'% + 1px);background:rgba(0,0,0,.8);opacity:0;transform:scale(0);transition:transform .25s cubic-bezier(.22,1,.36,1),opacity .25s cubic-bezier(.22,1,.36,1)';box.appendChild(b);blocks.push({b,r,c});}
+      const sq=Array.from(card.querySelectorAll('[data-sq]')).map(e=>({e,x:+e.dataset.sx/100,y:+e.dataset.sy/100,ox:0,oy:0}));
+      const st={p:{x:.5,y:.5},hover:false,sq};
+      card.addEventListener('mouseenter',()=>{st.hover=true;blocks.forEach(o=>{o.b.style.transitionDelay=((o.r+o.c)*.018)+'s';o.b.style.opacity=1;o.b.style.transform='scale(1)';});});
+      card.addEventListener('mouseleave',()=>{st.hover=false;st.p={x:.5,y:.5};blocks.forEach(o=>{o.b.style.transitionDelay=(((8-o.r)+(12-o.c))*.012)+'s';o.b.style.opacity=0;o.b.style.transform='scale(0)';});});
+      card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();st.p={x:(e.clientX-r.left)/r.width,y:(e.clientY-r.top)/r.height};});
+      return st;});
+    const cta=sec.querySelector('[data-cta]');if(cta){const p=cta.parentElement;p.addEventListener('mouseenter',()=>cta.style.marginBottom='36px');p.addEventListener('mouseleave',()=>cta.style.marginBottom='24px');}
+    const frame=()=>{
+      const r=sec.getBoundingClientRect(),vh=innerHeight,p=Math.max(0,Math.min(1,(vh-r.top)/(vh+r.height)));
+      if(r.bottom>-100&&r.top<vh+100){
+        if(!this.rm)fl.forEach(o=>{o.y+=((-(80+o.i*30)*p)-o.y)*.08;o.e.style.transform='translateY('+o.y.toFixed(2)+'px)';});
+        if(!this.rm)cards.forEach(s=>s.sq.forEach(q=>{const tx=s.hover?(s.p.x-q.x)*40:0,ty=s.hover?(s.p.y-q.y)*40:0;q.ox+=(tx-q.ox)*.14;q.oy+=(ty-q.oy)*.14;q.e.style.transform='translate('+q.ox.toFixed(2)+'px,'+q.oy.toFixed(2)+'px)';}));
+      }
+      this.wraf=requestAnimationFrame(frame);};
+    frame();this.stopWork=()=>cancelAnimationFrame(this.wraf);
+  }
+  initSphere() {
+    const stage=document.getElementById('stage'),world=document.getElementById('world'),head=document.getElementById('headline');
+    if(!stage)return;
+    const cards=Array.from(stage.querySelectorAll('[data-card]')),N=cards.length,GA=Math.PI*(3-Math.sqrt(5)),D=Math.PI/180;
+    const U=cards.map((c,i)=>{const y=1-(i/(N-1))*2,r=Math.sqrt(Math.max(0,1-y*y)),t=i*GA;return{x:Math.cos(t)*r,y,z:Math.sin(t)*r,tall:c.dataset.tall==='1'}});
+    const shades=cards.map(c=>c.querySelector('[data-shade]'));
+    let R=300,lw=innerWidth,lh=innerHeight;const S={spin:0,tilt:-4,dx:0,dy:0,vx:0,vy:0,drag:false};
+    const layout=()=>{const w=innerWidth,h=stage.clientHeight||innerHeight,k=w<=380?0:w<=640?1:2;R=Math.max([108,120,155][k],Math.min(480,h*[.38,.42,.46][k],w*[.48,.52,.58][k]));const cw=Math.round(Math.max(72,R*[.44,.46,.47][k]));stage.style.perspective=(w<=380?620:w<=640?760:w<=900?920:1150)+'px';cards.forEach((c,i)=>{const u=U[i],ch=u.tall?cw*1.25:cw/1.5;c.style.width=cw+'px';c.style.height=ch+'px';c.style.marginLeft=(-cw/2)+'px';c.style.marginTop=(-ch/2)+'px';c.style.transform='translate3d('+(u.x*R)+'px,'+(-u.y*R)+'px,'+(u.z*R)+'px) rotateY('+(Math.atan2(u.x,u.z)/D)+'deg) rotateX('+(Math.asin(u.y)/D)+'deg)';});};
+    layout();
+    const clampP=()=>{S.dy=Math.max(-32-S.tilt,Math.min(32-S.tilt,S.dy));};
+    const frame=()=>{
+      const lit=this.state.lit>=0;
+      if(!S.drag&&!lit){if(!this.rm)S.dx+=.05;S.dx+=S.vx;S.dy+=S.vy;S.vx*=.94;S.vy*=.94;if(Math.abs(S.vx)<.002)S.vx=0;if(Math.abs(S.vy)<.002)S.vy=0;clampP();}
+      const sx=S.tilt+S.dy,sy=S.spin+S.dx,cx=Math.cos(sx*D),sxn=Math.sin(sx*D),cy=Math.cos(sy*D),syn=Math.sin(sy*D);
+      world.style.transform='rotateY('+sy+'deg) rotateX('+sx+'deg)';
+      head.style.transform='rotateX('+(-sx)+'deg) rotateY('+(-sy)+'deg) translateZ('+(R*.62)+'px)';
+      for(let i=0;i<N;i++){const u=U[i],y1=u.y*-1*cx-u.z*sxn,z1=-u.y*-1*0+(-u.y)*sxn*0;
+        const yy=-u.y,zy=yy*sxn+u.z*cx,zf=-u.x*syn+zy*cy;
+        const base=.14+.86*Math.pow((zf+1)/2,.85);let dim=1-base;if(lit)dim=Math.min(1,dim+.5);
+        const v=dim.toFixed(3);if(shades[i]._v!==v){shades[i]._v=v;shades[i].style.opacity=v;}}
+      this.raf=requestAnimationFrame(frame);
+    };
+    frame();
+    let sd=null,dc=null,tot=0,lx=0,ly=0;
+    const down=e=>{if(this.state.lit>=0)return;S.drag=true;sd={x:e.clientX,y:e.clientY};lx=e.clientX;ly=e.clientY;tot=0;dc=e.target.closest&&e.target.closest('[data-card]');stage.style.cursor='grabbing';try{stage.setPointerCapture(e.pointerId)}catch(_){}};
+    const move=e=>{if(!S.drag)return;const ddx=e.clientX-lx,ddy=e.clientY-ly;lx=e.clientX;ly=e.clientY;S.dx+=ddx*.13;S.dy+=ddy*.13;S.vx=ddx*.13;S.vy=ddy*.13;clampP();tot=Math.hypot(e.clientX-sd.x,e.clientY-sd.y);};
+    const up=e=>{if(!S.drag)return;S.drag=false;stage.style.cursor='grab';if(tot<(e.pointerType==='touch'?14:6)&&dc){S.vx=0;S.vy=0;this.setState({lit:+dc.dataset.card});}dc=null;};
+    const rs=()=>{if(Math.abs(innerWidth-lw)<20&&Math.abs(innerHeight-lh)<20)return;lw=innerWidth;lh=innerHeight;layout();};
+    const key=e=>{if(e.key==='Escape')this.setState({lit:-1});};
+    stage.addEventListener('pointerdown',down);stage.addEventListener('pointermove',move);stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);window.addEventListener('resize',rs);window.addEventListener('keydown',key);
+    this.stopSphere=()=>{cancelAnimationFrame(this.raf);window.removeEventListener('resize',rs);window.removeEventListener('keydown',key);};
+  }
+  renderVals() {
+    const a = this.state.active, sc = this.state.scrolled;
+    return {
+      navH: sc ? 60 : 84,
+      navBg: sc ? 'rgba(11,11,11,.78)' : 'rgba(11,11,11,0)',
+      navBlur: sc ? 'blur(14px)' : 'blur(0px)',
+      navLine: sc ? 'rgba(245,242,237,.08)' : 'rgba(245,242,237,0)',
+      dia: [['Creativity',215],['Data',335],['Strategy',110]].map((d,i)=>{const a=d[1]*Math.PI/180,h=this.state.hov===i;return{name:d[0],x2:50+36*Math.cos(a),y2:50+36*Math.sin(a),lx:50+46*Math.cos(a),ly:50+46*Math.sin(a),sw:h?.6:.18,op:h?1:.45,fw:h?700:300,on:()=>this.setState({hov:i}),off:()=>this.setState({hov:-1})};}),
+      colDisp: this.state.layout==='col'?'block':'none', hDisp: this.state.layout==='h'?'block':'none',
+      setCollage:()=>this.setState({layout:'col'}), setHoriz:()=>this.setState({layout:'h'}),
+      colPressed:this.state.layout==='col'?'true':'false', hPressed:this.state.layout==='h'?'true':'false',
+      colBg:this.state.layout==='col'?'#f5f2ed':'transparent', colInk:this.state.layout==='col'?'#0b0b0b':'#f5f2ed',
+      hBg:this.state.layout==='h'?'#f5f2ed':'transparent', hInk:this.state.layout==='h'?'#0b0b0b':'#f5f2ed',
+      teamSlides: this.team.map((t,i)=>({name:t[0],img:this.timg(t),op:i===this.state.ti?1:0,dot:i===this.state.ti?1:0,sel:i===this.state.ti?'true':'false',pick:()=>this.setState(s=>({ti:i,tn:s.tn+1}))})),
+      teamActive:{name:this.team[this.state.ti][0],role:this.team[this.state.ti][1],bio:this.team[this.state.ti][4]}, teamFade:this.state.tn%2?'fadeA':'fadeB',
+      hintOp: this.state.side ? 0 : 1,
+      panels: [
+        {k:'l',tag:'01 · The familiar',headline:'We Are Just Like \nEvery Other Agency.',img:R('img_s/p_familiar.png'),d:['M4 6h16M4 12h16M4 18h10','M12 3a9 9 0 100 18 9 9 0 000-18zM12 7v5l3 2','M4 20V10M10 20V4M16 20v-8M2 20h20']},
+        {k:'r',tag:'02 · The difference',headline:'We Are Unlike \nEvery Other Agency.',img:R('img_s/p_difference.png'),d:['M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z','M4 12h16M12 4l8 8-8 8','M12 21c-4-3-8-6-8-10a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 11c0 4-4 7-8 10z']}
+      ].map(p=>{const on=this.state.side===p.k,idle=!this.state.side;return{...p,enter:()=>this.setState({side:p.k}),leave:()=>this.setState({side:null}),edge:p.k==='r'?'rgba(245,242,237,.14)':'transparent',
+        imgOp:on?1:idle?.5:.22,imgScale:on?1.04:1,gray:on?0:idle?.4:1,hlY:on?0:105,listOp:on?1:0,listY:on?0:18,
+        items:p.d.map(d=>({d,t:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.'}))};}),
+      caseDisplay: this.state.caseOpen==='bmw' ? 'block' : 'none', gDisplay: this.state.caseOpen==='g' ? 'block' : 'none',
+      sphereCards: this.sph.map(c=>({...c,img:R(c.img)})), lit: this.state.lit >= 0 ? {...this.sph[this.state.lit],img:R(this.sph[this.state.lit].img)} : { img: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', title: '', place: '', fit: 'cover' },
+      litOp: this.state.lit >= 0 ? 1 : 0, litPE: this.state.lit >= 0 ? 'auto' : 'none', litScale: this.state.lit >= 0 ? 1 : .94,
+      closeLit: () => this.setState({ lit: -1 }), stop: e => e.stopPropagation(),
+      active: { name: this.svc[a][0], desc: this.svc[a][1] },
+      services: this.svc.map((s, i) => ({ name: s[0], img: R(s[2]), select: () => this.setState({ active: i }), color: i === a ? '#f5f2ed' : 'rgba(245,242,237,.5)', size: i === a ? 34 : 24, bar: i === a ? 24 : 0, op: i === a ? 1 : 0, scale: i === a ? 1 : 1.06 })),
+      stats: [{ to: 4, fmt: 'M', suffix: '', label: '4M', caption: 'Revenue' }, { to: 85, fmt: '', suffix: '%', label: '85%', caption: 'User retention' }, { to: 100, fmt: 'K', suffix: '', label: '100K', caption: 'Website visitors' }],
+      cards: [['a6','BMW'],['a7','BMW'],['a9','BMW'],['a8','BMW']].map(c => ({ img: R('img_s/' + (c[0] === 'a7' ? 'a4' : c[0]) + '.png'), brand: c[1] })),
+      contacts: [{ label: 'Email', value: 'hello@richmondday.com', href: 'mailto:hello@richmondday.com' }, { label: 'Toronto, Canada', value: 'Toronto, Canada', href: '#' }, { label: 'Web', value: 'richmondday.com', href: '#' }]
+    };
+  }
+}
+</script>
+</body>
+</html>

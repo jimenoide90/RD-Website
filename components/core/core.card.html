@@ -1,0 +1,14 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Core" -->
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_ds_bundle.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script><script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<body style="margin:0;background:var(--bg-page);color:var(--text-primary);padding:20px"><div id="r"></div>
+<script type="text/babel">
+const NS=Object.values(window).find(v=>v&&typeof v==='object'&&v.Button&&v.WorkCard)||{};
+const {Button,SectionHeader,WorkCard}=NS;
+ReactDOM.createRoot(document.getElementById('r')).render(<div>
+<SectionHeader title="WORK" index="02 / 06"/>
+<div style={{display:'flex',gap:16,alignItems:'center',marginBottom:24}}><Button href="#">Start a project</Button><Button variant="text" href="#">Discuss this</Button></div>
+<div style={{width:320}}><WorkCard image="../../assets/a1.png" title="HeartX" tags="Brand Strategy & Web Design" year="2026"/></div>
+</div>);
+</script></body>

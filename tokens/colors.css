@@ -1,0 +1,10 @@
+:root{
+--rd-black:#000000;--rd-ink:#0b0b0b;--rd-ink-2:#0f0f0f;--rd-ink-3:#161616;
+--rd-paper:#f5f2ed;--rd-stone:#d9d5cc;--rd-white:#ffffff;
+--rd-orange:#ed3d02;--rd-slate:#889bb1;
+--rd-line:rgba(245,242,237,.12);--rd-line-strong:rgba(245,242,237,.3);--rd-line-light:rgba(0,0,0,.14);
+--rd-scrim:rgba(0,0,0,.55);--rd-scrim-card:rgba(0,0,0,.75);
+--bg-page:var(--rd-ink);--bg-section-alt:var(--rd-ink-2);--bg-card:var(--rd-ink-3);--bg-invert:var(--rd-paper);
+--text-primary:var(--rd-paper);--text-secondary:var(--rd-stone);--text-meta:var(--rd-slate);--text-on-invert:var(--rd-ink);--text-on-accent:var(--rd-white);
+--accent:var(--rd-orange);--border-subtle:var(--rd-line);
+}
